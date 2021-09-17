@@ -6,7 +6,7 @@ namespace App\Models;
 use CodeIgniter\Model;
 
 
-class remediomodel extends Model{
+class RemedioModel extends Model{
 
     protected $table= 'tbremedio';
     protected $primaryKey='CodRmd';

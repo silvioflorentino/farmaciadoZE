@@ -59,8 +59,10 @@
                 Usuários
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Cadastrar</a></li>
-                <li><a class="dropdown-item" href="#">Consultar/Alterar/Exclui</a></li>
+                <li><a class="dropdown-item" href="<?php echo base_url('../UsuarioController/inserirUsuario')?>">Cadastrar</a></li>
+                <li><a class="dropdown-item" href="<?php echo base_url('../UsuarioController/visualizarTodosUsuarios')?>">Listar Todos</a></li>
+                <li><a class="dropdown-item" href="<?php echo base_url('../UsuarioController/visualizarCodUsuario')?>">Pesquisar por Código</a></li>
+
               </ul>
             </li>
           </ul>

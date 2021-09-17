@@ -46,12 +46,27 @@ class RemedioController extends BaseController{
 		echo view('footer');
     }
 
-    public function alterarremedio(){
-        echo("Arrumar os menus");
+    public function visuNomeRemedio(){
+        
+        $remedioModel = new \App\Models\RemedioModel();
+        $dados = $remedioModel -> find();
+        $data['remedios'] = $dados;
+
+        echo view('header'); 
+        echo view('visuTudoRemedio',$data);
+        echo view('footer');
     }
 
-    public function visupormarca(){
+     public function visuPorLab(){
 
+    }
+
+    public function visuTarja(){
+
+    }
+
+    public function alterarremedio(){
+        echo("Arrumar os menus");
     }
 
 }
